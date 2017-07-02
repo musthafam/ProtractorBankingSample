@@ -20,5 +20,38 @@ this.ManagerLogin=function()
 {
 	ManagerLogin.click();
 }
+this.isHomeButtonPresent=function()
+{
+	if(HomeButton.isPresent())
+	{
+		return true
+	}
+	else
+	{
+		return false
+	}
+}
+this.isCustomerLoginPresent=function()
+{
+	if(CustomerLogin.isPresent())
+	{
+		return true
+	}
+	else
+	{
+		return false
+	}
+}
+this.isManagerLoginPresent=function()
+{
+	if(ManagerLogin.isPresent())
+	{
+		return true
+	}
+	else
+	{
+		return false
+	}
+}
 };
 module.exports=new HomePage();
